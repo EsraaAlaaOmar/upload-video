@@ -37,7 +37,7 @@
   <script>
     function video  (){
       var fileInput = document.getElementById('video_p');
-     var fileUrl = window.URL.createObjectURL(fileInput.files[0]);
+     var fileUrl = URL.createObjectURL(fileInput.files[0]);
      document.getElementById('source').setAttribute("src", fileUrl);
      console.log(fileUrl)
      console.log(fileInput.files)
